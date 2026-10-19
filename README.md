@@ -64,6 +64,53 @@ An experimental project in the Doom ecosystem, part of an ongoing exploration of
 </td></tr>
 </table>
 
+### Tech stack
+
+*A practical toolkit shaped by the projects I build and the technologies I explore.*
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**01 / Applications & Web**
+
+`TypeScript` `JavaScript` `React` `Next.js`
+
+Interfaces, interactive applications and product-focused web development.
+
+</td>
+<td width="50%" valign="top">
+
+**02 / Hardware & Embedded**
+
+`ESP32` `C++` `Prototyping` `Image Processing`
+
+Physical computing, digital cameras and experimental electronics.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**03 / AI & Development**
+
+`AI-assisted Development` `Agents` `Research` `Review`
+
+Using AI tools to explore ideas, accelerate implementation and support technical review.
+
+</td>
+<td width="50%" valign="top">
+
+**04 / Engineering Workflow**
+
+`Git` `GitHub Actions` `Testing` `ADRs`
+
+Version control, automated checks, architectural decisions and documentation.
+
+</td>
+</tr>
+</table>
+
 ### From the workshop
 
 A selection of other public repositories, including early-stage experiments and work in progress:

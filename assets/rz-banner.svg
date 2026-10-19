@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
+<title id="title">Rafael Zaratin — Creative Engineering</title><desc id="desc">Retro-futurist technical grid with RZ monogram and Rafael Zaratin name.</desc>
+<rect width="1200" height="330" fill="#10151d"/>
+<defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#283440" stroke-width=".65"/></pattern></defs>
+<rect width="1200" height="330" fill="url(#grid)" opacity=".55"/>
+<path d="M42 48H1158M42 281H1158" stroke="#405363" stroke-width="1"/>
+<rect x="55" y="80" width="178" height="166" fill="#18232e" stroke="#87a5a1" stroke-width="2"/>
+<text x="144" y="188" text-anchor="middle" font-family="Consolas,monospace" font-size="78" font-weight="bold" letter-spacing="-10" fill="#e3e8e9">RZ</text>
+<path d="M72 96h22M72 96v22M216 229h-22M216 229v-22" stroke="#d5a66b" stroke-width="3" fill="none"/>
+<text x="275" y="109" font-family="Consolas,monospace" font-size="16" letter-spacing="4" fill="#87a5a1">INDEPENDENT MAKER / BRAZIL</text>
+<text x="272" y="171" font-family="Arial,Helvetica,sans-serif" font-size="54" font-weight="bold" fill="#e3e8e9">Rafael Zaratin</text>
+<text x="275" y="215" font-family="Consolas,monospace" font-size="21" letter-spacing="3" fill="#d5a66b">CREATIVE ENGINEERING</text>
+<text x="55" y="307" font-family="Consolas,monospace" font-size="12" letter-spacing="2" fill="#8b9ca7">SOFTWARE / HARDWARE / DESIGN / EXPERIMENTS</text>
+<text x="1154" y="307" text-anchor="end" font-family="Consolas,monospace" font-size="12" fill="#8b9ca7">RZ / 001</text>
+</svg>

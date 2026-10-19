@@ -1,0 +1,35 @@
+name: Validate profile
+on:
+  push:
+    paths:
+      - README.md
+      - assets/**
+      - .github/workflows/validate-profile.yml
+  pull_request:
+    paths:
+      - README.md
+      - assets/**
+      - .github/workflows/validate-profile.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate local assets and featured repositories
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          readme = Path('README.md').read_text(encoding='utf-8')
+          assert Path('assets/rz-banner.svg').is_file()
+          assert '<svg' in Path('assets/rz-banner.svg').read_text(encoding='utf-8')
+          assert 'Rafael Zaratin' in readme
+          assert not re.search(r'https://github.com/Rafazara/(?:depth|HAL-Library|zaratin-studio)(?:\W|$)', readme, re.I)
+          for name in ['PXLcam', 'caderno-musical', 'tech-architecture-adr', 'minidoom']:
+              assert f'https://github.com/Rafazara/{name}' in readme
+          print('Profile validation passed')
+          PY

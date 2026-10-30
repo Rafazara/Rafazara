@@ -1,0 +1,55 @@
+name: Update RZ profile banner (one time)
+on:
+  push:
+    paths:
+      - '.github/workflows/profile-banner-once.yml'
+permissions:
+  contents: write
+jobs:
+  refresh-banner:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply a verified illustration-preserving SVG patch
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib
+          p = Path('assets/rz-banner.svg')
+          old_bytes = p.read_bytes()
+          blob_hash = hashlib.sha1(b'blob ' + str(len(old_bytes)).encode() + b'\0' + old_bytes).hexdigest()
+          expected = 'e3f741accf5e91f1cfddafc4d30a321af7a4ccea'
+          if blob_hash != expected:
+              raise SystemExit(f'Banner integrity mismatch: {blob_hash} != {expected}')
+          source = old_bytes.decode('utf-8')
+          if source.count('</svg>') != 1 or 'data:image/png;base64' not in source:
+              raise SystemExit('Unexpected banner format. No changes applied.')
+          patch = """\
+<defs>
+<linearGradient id="rz-ink" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffebbe"/><stop offset=".45" stop-color="#f5d5a0"/><stop offset="1" stop-color="#c7a573"/></linearGradient>
+<linearGradient id="rz-plate" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#10130f"/><stop offset="1" stop-color="#0b0d0c"/></linearGradient>
+<pattern id="rz-stipple" width="17" height="17" patternUnits="userSpaceOnUse"><circle cx="2" cy="5" r=".6" fill="#d7b17d" opacity=".24"/><circle cx="12" cy="14" r=".4" fill="#d7b17d" opacity=".16"/></pattern>
+</defs>
+<rect x="390" y="129" width="558" height="46" fill="#0d100f"/>
+<path d="M391 174 H918" stroke="#b78a52" stroke-width="1" opacity=".17"/>
+<rect x="78" y="130" width="278" height="232" fill="url(#rz-plate)"/>
+<rect x="78" y="130" width="278" height="232" fill="url(#rz-stipple)"/>
+<path d="M89 181 V142 H129 M305 142 H344 V181 M89 312 V350 H129 M305 350 H344 V312" fill="none" stroke="#c48e4c" stroke-width="4" stroke-linecap="square"/>
+<path d="M125 176 H190 C218 176 234 192 234 218 C234 237 224 250 206 257 L238 320 H204 L176 264 H152 V320 H125 Z M152 202 V238 H189 C201 238 207 232 207 220 C207 209 201 202 188 202 Z" fill="url(#rz-ink)" fill-rule="evenodd"/>
+<path d="M243 176 H333 V204 L275 290 H334 V320 H239 V293 L295 204 H243 Z" fill="url(#rz-ink)"/>
+<path d="M305 302 L334 302" stroke="#d56936" stroke-width="5"/>
+<path d="M114 328 H339" stroke="#e0b36e" stroke-width="1" opacity=".25"/>
+          """
+          updated = source.replace('</svg>', patch + '\n</svg>')
+          assert len(updated) > len(source) and updated.count('id="rz-ink"') == 1
+          p.write_text(updated, encoding='utf-8')
+          print('Updated original banner; underlying illustration preserved.')
+          PY
+      - name: Commit only the updated banner
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git diff --check
+          git add -- assets/rz-banner.svg
+          git commit -m "design(profile): refine original RZ cover artwork"
+          git push origin HEAD:main

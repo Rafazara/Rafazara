@@ -1,142 +1,41 @@
 <p align="center">
-  <img src="assets/rz-banner.svg" alt="Rafael Zaratin — Creative Engineering" width="100%" />
+  <img src="assets/rz-banner.svg" alt="Rafael Zaratin — Creative Engineering. A retro-futurist illustrated landscape with the RZ monogram." width="100%" />
 </p>
 
 <p align="center">
-  <strong>Creative development · Software · Hardware · AI-assisted engineering</strong><br />
-  <sub>Independent maker based in Brazil · Building thoughtful digital and physical experiences</sub>
-</p>
-
-<p align="center">
-  <a href="#selected-work">Selected work</a> &nbsp;·&nbsp;
-  <a href="#how-i-build">How I build</a> &nbsp;·&nbsp;
-  <a href="#currently-exploring">Exploring</a>
+  <strong>Making ideas tangible.</strong><br />
+  <sub>Product thinking &nbsp;·&nbsp; Thoughtful interfaces &nbsp;·&nbsp; Physical computing</sub>
 </p>
 
 ---
 
-### A little about me
+### Hello, I'm Rafael.
 
-I'm **Rafael Zaratin**, a maker who enjoys taking ideas from the first sketch to working prototypes. I work across software, interfaces, creative coding and physical computing — always looking for ways to make technology useful, expressive and a little more human.
+I'm **Rafael Zaratin**, a maker with a background in product design and a curiosity that moves between the digital and the physical.
 
-My repositories reflect that curiosity. Some are carefully structured applications; others are experiments, learning projects or early-stage prototypes. I believe both belong in the process of building something meaningful.
+I like taking ideas from an early sketch to something that actually works — whether that's an interface, a small electronic device, or an unexpected creative experiment. I care about **how things feel**, not just what they do.
 
-### Selected work
+### What I explore
 
-<table>
-<tr><td width="50%" valign="top">
+**01 / Digital experiences**  
+Interfaces, useful applications, interactive learning, and products built with intention.
 
-**[PXLcam](https://github.com/Rafazara/PXLcam)**  
-*Retro digital photography · Embedded systems*
+**02 / Things you can hold**  
+Embedded electronics, small devices, digital cameras, and hands-on prototyping.
 
-A pocket-sized, pixel-inspired camera project combining ESP32-based hardware, image processing and a distinctive lo-fi visual language.
-
-`ESP32` `C++` `Image processing` `Hardware`
-
-</td><td width="50%" valign="top">
-
-**[Caderno Musical](https://github.com/Rafazara/caderno-musical)**  
-*Music education · Interactive learning*
-
-A digital music-theory notebook that turns study into active practice, with exercises, feedback, revision and local progress tracking.
-
-`Next.js` `React` `TypeScript` `Education`
-
-</td></tr>
-<tr><td width="50%" valign="top">
-
-**[Architecture ADR](https://github.com/Rafazara/tech-architecture-adr)**  
-*Engineering practices · Documentation*
-
-A reusable architecture-decision-record template with documented conventions and automated validation.
-
-`Architecture` `Documentation` `GitHub Actions`
-
-</td><td width="50%" valign="top">
-
-**[MiniDoom](https://github.com/Rafazara/minidoom)**  
-*Games · Technical exploration*
-
-An experimental project in the Doom ecosystem, part of an ongoing exploration of games, retro software and portable experiences.
-
-`Game development` `Retro computing` `Experiment`
-
-</td></tr>
-</table>
-
-### Tech stack
-
-*A practical toolkit shaped by the projects I build and the technologies I explore.*
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-**01 / Applications & Web**
-
-`TypeScript` `JavaScript` `React` `Next.js`
-
-Interfaces, interactive applications and product-focused web development.
-
-</td>
-<td width="50%" valign="top">
-
-**02 / Hardware & Embedded**
-
-`ESP32` `C++` `Prototyping` `Image Processing`
-
-Physical computing, digital cameras and experimental electronics.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-**03 / AI & Development**
-
-`AI-assisted Development` `Agents` `Research` `Review`
-
-Using AI tools to explore ideas, accelerate implementation and support technical review.
-
-</td>
-<td width="50%" valign="top">
-
-**04 / Engineering Workflow**
-
-`Git` `GitHub Actions` `Testing` `ADRs`
-
-Version control, automated checks, architectural decisions and documentation.
-
-</td>
-</tr>
-</table>
-
-### From the workshop
-
-A selection of other public repositories, including early-stage experiments and work in progress:
-
-- **[Subhub](https://github.com/Rafazara/subhub)** — web application project; documentation in progress.
-- **[Orbitas](https://github.com/Rafazara/orbitas)** — exploratory public project; documentation in progress.
-- **[AgentOps Observer](https://github.com/Rafazara/agentops_observer)** — experimental tooling; documentation in progress.
+**03 / The space in between**  
+Creative coding, retro technology, AI-assisted building, and ideas that don't fit neatly into one discipline.
 
 ### How I build
 
-I like to work at the intersection of **product thinking, design and engineering**. My process favors clear documentation, small verifiable milestones, thoughtful interfaces and practical experimentation.
+**Think clearly. Prototype early. Test honestly. Refine with care.**
 
-| Focus | Tools and approaches appearing in my work |
-| --- | --- |
-| Applications & interfaces | TypeScript, React, Next.js, UI systems |
-| Embedded & physical computing | ESP32, C++, prototyping |
-| Engineering workflow | Git, GitHub Actions, architecture decisions, testing |
-| Creative technology | Photography, music education, retro games |
-| AI-assisted development | Agent-assisted implementation, research and review |
-
-### Currently exploring
-
-**Hardware that feels personal. Software that is a pleasure to use. Creative tools that help people learn and make things.**
-
-My interests move between disciplines. This profile is a living record of that work, not a claim that every experiment is a finished product.
+I use design to ask better questions, technology to explore possible answers, and documentation to keep the process understandable. Some repositories are carefully built applications; others are sketches, experiments, and works in progress. Both matter.
 
 ---
 
-<p align="center"><sub>RZ / Rafael Zaratin &nbsp;—&nbsp; Built with curiosity, refined with care.</sub></p>
+<p align="center">
+  <a href="https://github.com/Rafazara?tab=repositories">Explore the workshop</a>
+  &nbsp;·&nbsp;
+  <sub>RZ / Built with curiosity. Refined with care.</sub>
+</p>

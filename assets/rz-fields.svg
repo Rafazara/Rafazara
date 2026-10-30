@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="t d">
+<title id="t">Areas of exploration</title><desc id="d">Three fields of exploration: digital experiences, physical computing, creative technology.</desc>
+<defs><linearGradient id="b" x2="1" y2=".7"><stop stop-color="#12171c"/><stop offset="1" stop-color="#0d1115"/></linearGradient><pattern id="p" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#d69e74" opacity=".11"/></pattern></defs>
+<rect x="1" y="1" width="1198" height="218" rx="11" fill="url(#b)" stroke="#55483e" stroke-opacity=".7"/>
+<rect width="1200" height="220" rx="11" fill="url(#p)"/>
+<path d="M400 25V193M800 25V193" stroke="#796b5e" stroke-opacity=".45"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="31" y="50" font-size="12" letter-spacing="2.6" fill="#d38b58" font-weight="700">01 / DIGITAL</text>
+<text x="31" y="102" font-size="27" letter-spacing="-.4" font-weight="700" fill="#f0eae2">Interfaces &amp;</text><text x="31" y="135" font-size="27" letter-spacing="-.4" font-weight="700" fill="#f0eae2">products</text>
+<text x="31" y="175" font-size="15" fill="#ada69f">Useful experiences, intentionally made.</text>
+<text x="430" y="50" font-size="12" letter-spacing="2.6" fill="#d38b58" font-weight="700">02 / PHYSICAL</text>
+<text x="430" y="102" font-size="27" letter-spacing="-.4" font-weight="700" fill="#f0eae2">Objects &amp;</text><text x="430" y="135" font-size="27" letter-spacing="-.4" font-weight="700" fill="#f0eae2">electronics</text>
+<text x="430" y="175" font-size="15" fill="#ada69f">Prototypes you can hold and use.</text>
+<text x="830" y="50" font-size="12" letter-spacing="2.6" fill="#d38b58" font-weight="700">03 / EXPERIMENTAL</text>
+<text x="830" y="102" font-size="27" letter-spacing="-.4" font-weight="700" fill="#f0eae2">Ideas in</text><text x="830" y="135" font-size="27" letter-spacing="-.4" font-weight="700" fill="#f0eae2">between</text>
+<text x="830" y="175" font-size="15" fill="#ada69f">Creative tools, AI and retro tech.</text>
+</g>
+<g stroke="#b77c52" opacity=".55" fill="none"><path d="M340 44h25v25"/><circle cx="365" cy="69" r="3" fill="#b77c52"/><path d="M741 44h25v25"/><path d="M1138 46h25v25"/></g>
+</svg>
